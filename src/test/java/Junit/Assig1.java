@@ -5,6 +5,11 @@ public class Assig1 {
 
         System.out.println("Asma Aharbi");
         System.out.println("Asma Aharbi");
+        System.out.println("Asma Aharbi");
+        System.out.println("Asma Aharbi");
+        System.out.println("Asma Aharbi");
+        System.out.println("Asma Aharbi");
+        System.out.println("Asma Aharbi");
 
     }
 }

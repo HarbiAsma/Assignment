@@ -14,7 +14,6 @@ import org.openqa.selenium.io.FileHandler;
 
 
 public class Assig4_7 extends Tests{
-    static WebDriver driver;
 
     @Test
     public void screenshotTests() throws IOException {
@@ -23,12 +22,13 @@ public class Assig4_7 extends Tests{
         driver.get("https://www.amazon.sa");
 
         // Take a full page screenshot
-        File Screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileHandler.copy(Screenshot,new File("target/fullPageScreenshot.png"));
+        TakesScreenshot ss = (TakesScreenshot)driver;
+        File ssFile = ss.getScreenshotAs(OutputType.FILE);
+        FileHandler.copy(ssFile,new File("C:\\Users\\farah\\IdeaProjects\\Assignment\\test\\image.png"));
 
         // Take a screenshot of specific WebElement
-        File Screenshot2 = driver.findElement(By.cssSelector("div#nav-belt")).getScreenshotAs(OutputType.FILE);
-        FileHandler.copy(Screenshot2,new File("target/WebElementScreenshot.png"));
+        File ssFile2 = driver.findElement(By.cssSelector("div#nav-belt")).getScreenshotAs(OutputType.FILE);
+        FileHandler.copy(ssFile2,new File("C:\\Users\\farah\\IdeaProjects\\Assignment\\test\\image2.png"));
 
     }
 }

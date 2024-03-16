@@ -15,6 +15,7 @@ import org.openqa.selenium.Cookie;
 public class Assig4_5 extends Tests {
     @Test
     public void cookies(){
+
         // Go to URL: http://facebook.com
         driver.get("http://facebook.com");
 

@@ -1,7 +1,7 @@
 package Junit;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+//import org.junit.jupiter.api.AfterEach;
+//import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,7 +14,7 @@ public abstract class Tests {
     protected WebDriver driver;
     protected Wait<WebDriver> wait;
 
-    @BeforeEach
+//    @BeforeEach
     public void beforeEach(){
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
@@ -22,7 +22,7 @@ public abstract class Tests {
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
-    @AfterEach
+ //   @AfterEach
     public void afterEach(){
         driver.quit();
     }

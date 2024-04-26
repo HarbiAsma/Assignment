@@ -31,4 +31,13 @@ public class PetPojo {
     public String getStatus() {return status;}
 
     public void setStatus(String status) {this.status = status;}
+
+    @Override
+    public String toString() {
+        return "PetPojo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }

@@ -5,12 +5,9 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import pojos.PetPojo;
 
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.testng.Assert.assertEquals;
-
-
 
 public class Hw12 extends SwaggerURL {
 /*
@@ -19,7 +16,6 @@ public class Hw12 extends SwaggerURL {
     (All actions must be done on same pet)
     (Use Pojo)
  */
-
 
     PetPojo expectedData;
 

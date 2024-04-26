@@ -8,7 +8,6 @@ public class PetPojo {
     private String name;
     private String status;
 
-
     public PetPojo() {
 
     }

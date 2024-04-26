@@ -32,4 +32,5 @@ public class Hw10 extends SwaggerURL {
         int availablePets = jsonPath.getList("findAll{it.status=='available'}").size();
         System.out.println("Pets Status = " + availablePets);
         assertTrue(availablePets>100);
+
     }}

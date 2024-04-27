@@ -60,7 +60,7 @@ public class Hw12 extends SwaggerURL {
     }
 
     @Test (priority = 3)
-    public void PurPet(){
+    public void PutPet(){
         spec.pathParams("first","pet");
 
         PetPojo expectedData = new PetPojo(11,"Kitten","sold");

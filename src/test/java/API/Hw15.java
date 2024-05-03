@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.Map;
 
-//import static Week10_Assignments.Assignment13.requestSpecBuilder;
+import static Week10_Assignments.Assignment13.requestSpecBuilder;
 import static org.hamcrest.Matchers.equalTo;
 
 public class Hw15 {
@@ -40,16 +40,16 @@ public class Hw15 {
         String email = "tester@gmail.com";
 
         // Create user request
-//        Response createResponse = RestAssured.given(requestSpecBuilder.build())
-//                .contentType(ContentType.JSON)
-//                .body("{\"name\": \"" + name + "\", \"email\": \"" + email + "\"}")
-//                .post("/users");
-//
-//        // Assert successful creation
-//        createResponse.then().statusCode(200)
-//                .body("name", equalTo(name)).body("email", equalTo(email));
-//        // Extract user ID for further requests
-//        ID = createResponse.then().extract().path("id");
+       Response createResponse = RestAssured.given(requestSpecBuilder.build())
+               .contentType(ContentType.JSON)
+               .body("{\"name\": \"" + name + "\", \"email\": \"" + email + "\"}")
+               .post("/users");
+
+       // Assert successful creation
+       createResponse.then().statusCode(200)
+               .body("name", equalTo(name)).body("email", equalTo(email));
+       // Extract user ID for further requests
+       ID = createResponse.then().extract().path("id");
 
         // Read user request
         Response readResponse = RestAssured.given()

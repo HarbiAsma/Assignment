@@ -5,7 +5,7 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-//import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +23,7 @@ public class Hw13 {
     private static String ID;
     static RequestSpecBuilder requestSpecBuilder;
 
-    // @BeforeAll
+    @BeforeAll
     public static void setUp() {
         requestSpecBuilder = new RequestSpecBuilder();
         requestSpecBuilder.setBasePath(url);

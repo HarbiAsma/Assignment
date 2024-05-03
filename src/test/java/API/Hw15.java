@@ -1,3 +1,4 @@
+
 package API;
 
 import io.restassured.RestAssured;
@@ -26,8 +27,8 @@ public class Hw15 {
     private static String URL = "https://your-api-base-url";
     @BeforeClass
     public static void setUp() {
-       // requestSpecBuilder = new RequestSpecBuilder();
-       // requestSpecBuilder.setBasePath(URL);
+        // requestSpecBuilder = new RequestSpecBuilder();
+        // requestSpecBuilder.setBasePath(URL);
     }
     private Map<String, Object> getUserFromResponse(Response response) {
         return response.as(Map.class);
